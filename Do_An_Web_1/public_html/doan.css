@@ -1,0 +1,210 @@
+*{margin:0;padding: 0;} html,body{width: 100%;height: 100%;}
+.head{
+width:100%;
+height:170px;
+
+}
+.content{
+    width:100%;
+    height:450px;
+}
+.left{
+    width:20%;
+    height:100%;
+    background-color:appworkspace;
+    float:left;
+    opacity: 0.9;
+}
+.mid{
+    width:80%;
+    height:100%;
+    float:left;
+    overflow-x: auto;
+}
+.footer{
+    width:100%;
+    height:200px;
+    clear:both;
+    border-radius: 15px
+}
+#img{
+    margin-left: 50px;
+    margin-top:20px;
+    width: 150px;
+    height:130px;
+    opacity: 1;
+    border-radius: 100px
+}
+.head1{
+    width:30%;
+    height:150px;
+    float: left;
+}
+.head2{
+    width:70%;
+    height:150px;
+    float:left
+}
+#div1{
+    font-family:Bodono MT;
+    margin-left:180px;
+    position: absolute;
+    top:50px;
+    font-size:30px;
+    color: orange;text-shadow: -3px -3px 6px black
+}
+#div2{
+    font:Bodono MT;
+    margin-left:180px;
+    position: absolute;
+    top:80px;
+    font-size:30px;
+    color: orange;text-shadow: -3px -3px 6px black
+}
+.img1{
+    width: 35px;
+    height: 35px;
+    position:absolute;
+    left:1190px;
+    top:132px;
+    border:0;
+    background: url(giohang.png) no-repeat;
+}
+#search{
+margin-top:100px;
+margin-left:30px;
+width:750px;height:35px
+}
+.head0{
+    width: 100%;
+    height:30px;
+    background-color:aliceblue
+}
+.dk{position:absolute;
+    top: 0;
+float:left;
+margin-left:1200px;
+}
+.welcome{
+    width:1200px;
+  height:20px;
+  color:red;
+  font-size:20px;
+}
+.dn{position:absolute;
+    top: 0;
+    left:1268px;
+    float:left;
+    margin-left:1px;
+    border-left:solid 1px white;
+}
+.dk:hover{
+    background-color: red;
+    color:white
+}
+.dn:hover{
+    background-color: red;
+    color:white
+}
+.img3{
+    width:35px;
+    height:35px;
+    position:absolute;
+    left:1150px;
+    top:132px;
+    border:0;
+    background:url(timkiem1.png);
+}
+.head3{
+    width:100%;height:50px;background-color:antiquewhite
+}
+.row{
+    margin-left: 270px;
+    height:66%;
+    float:left;
+    padding-top:17px;
+         color:black
+}
+.row1{
+    margin-left:50px;
+    height:66%;
+    float:left;
+    padding-top:17px;
+   
+}
+.row:hover{
+    background-color: blueviolet;
+    color:white
+}
+.row1:hover{
+    background-color: blueviolet;
+    color:white
+}
+a{
+ text-decoration:none   
+}
+.menu1{
+    color:black;
+font-size:20px;
+height:40px;
+margin-top:10px;
+border:solid 2px aqua;
+padding-top:15px;border-radius:10px;
+}
+.menu1:hover{
+    background-color: blueviolet;
+    color: white
+}
+#menu2{
+    background-color: aqua;
+    height: 50px;
+    font-size: 25px;
+    padding-top:13px;
+    border-radius:10px;
+}
+.trang{
+    float:left;
+    position:absolute;
+    left:700px;
+}
+#taotrang{
+    float:left;
+    position:absolute;
+    left:750px
+}
+.head4{
+    font-size:30px;
+    position: absolute;
+    left:400px;
+    top:35px;
+    font-family:sans-serif;
+    color:white;text-shadow: -3px -3px 6px black;
+    font-weight: bolder 
+}
+.head5{
+    font-size:30px;
+    position:absolute;
+    left:600px;
+    top:80px;
+    font-family:sans-serif;
+    color:white;text-shadow: -3px -3px 6px black;
+    font-weight: bolder 
+}
+.footer0{
+    width:100%;
+    height:50px;
+    background-color: cornsilk;
+    font-size:30px;
+    padding-top:15px  ;
+    border-radius: 15px
+} 
+.footer1{
+    font-size:25px
+}
+img:hover{
+    width:200px;
+    height:200px;
+}
+.hover:hover{
+    -ms-transform: scale(1.5,1.5);-webkit-transform: scale(1.5,1.5);transform: scale(1.5,1.5);
+}

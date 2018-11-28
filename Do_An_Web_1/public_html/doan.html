@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <link rel="shortcut icon" href="./favicon.ico"/>
+        <title>Main job</title>
+        <link rel="stylesheet" type="text/css" href="./doan.css"/>
+        <script>
+         function menu()
+         {  var giay =Array("Nike","Adidas","Puma","Converse","Vans");
+            var i=0,s="",vitri=0;
+            for(i=0;i<giay.length;i++)
+            {   s=s+'<a href="doan.html?'+i+'&'+vitri+'"><div class="menu1" align="center">'
+                +giay[i]+'</div></a>';
+                
+            }
+         document.getElementById("menu").innerHTML=s;
+             
+         }
+         function layurl()
+         {  var url=window.location.href;
+                 var chuoitam=url.split('?');
+                 var chuoitamcon=chuoitam[1];
+                 var s="",lienket="",dem=0,sotrang=1;
+                 var chuoicon=chuoitamcon.split('&');
+                 var vitri=chuoicon[1];
+                 switch(chuoicon[0])
+            {   case '0':
+                var giay= Array("Nike Air Max 270 Blue","Nike Air Max Plus ","Nike zoom","Nike Roshe Run","Nike air zoom pegasus"),i,dem=0,gia=Array("1000000VNĐ");
+                for(i=vitri;i<giay.length;i++)
+                {
+                    dem++;
+                 s=s+'<a href="doan.html?ct0&'+i+'">'+'<div class="me" style="float:left;width:290px;height:350px;margin:10px 15px 0 40px;border:solid 1px red;box-shadow: 5px 5px 10px" align="center"><div style="width:290px;height:320px">'
+                 +'<img src="anh/Nike'+i+'.jpg" style="width:250px;height:250px" class="hover" />'+
+                 '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
+                 +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
+		'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                 if(dem==3) break;
+                 
+                }
+                sotrang=Math.ceil(giay.length/3);
+                break;
+            case '1':
+                var giay =Array("Adidas running galaxy 2","Adidas running galaxy 3","Adidas yeezy boots 350 v2","Adidas thể thao st2043","Adidas nmd xr1");
+                var i,dem=0,gia= Array("10000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {dem++;
+                   s=s+'<a href="doan.html?ct1&'+i+'">'+
+                   '<div class="me" style=" float:left;width:290px;height:380px;margin:10px 15px 0 40px;border:solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                 +'<img src="anh/Adidas'+i+'.jpg" style="width:250px;height:250px " class="hover"/>'+
+                 '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
+                 +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
+		'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                 if(dem==3) break; 
+                }
+                sotrang=Math.ceil(giay.length/3);
+                break;
+            case '2':
+                var giay=Array("Puma classic basket lfs 2","Puma classic basket lfs 3","Puma Trax","Puma Trax","Puma Tishatsu Runner Knit");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct2&'+i+'">'+
+                         '<div class="me" style=" float:left;width:290px;height:380px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                         +'<img src="anh/Puma'+i+'.jpg" style="width:250px;height:250px" class="hover" /> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+			'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+
+                         
+                    if(dem==3) break;
+                }
+               sotrang=Math.ceil(giay.length/3);
+               break;
+           case '3':
+               var giay=Array("Converse classic đen","Converse chuck 2","Converse classic đỏ","Converse chuck 2 trắng"," converse classic xám");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct3&'+i+'">'+
+                         '<div class"me" style=" float:left;width:290px;height:350px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         +'<img src="anh/Converse'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+                         '</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                         
+                    if(dem==3) break;
+                }
+               sotrang=Math.ceil(giay.length/3);
+               break;
+           case '4':
+               var giay=Array("Vans V183","Vans V185","Vans V1484","Vans V184","Cans V124");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct4&'+i+'">'+
+                         '<div class="me" style=" float:left;width:290px;height:350px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         +'<img src="anh/Vans'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+                         '</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+
+                         
+                    if(dem==3) break;
+                }
+               sotrang=Math.ceil(giay.length/3);
+               break;
+            }
+            for(i=1;i<=sotrang;i++)
+             {vitri=(i-1)*3;
+              lienket=lienket+'<a href="doan.html?'+chuoicon[0]+'&'+vitri+'">'+i+'</a>';   
+             }
+          
+            document.getElementById("taonoidung").innerHTML=s;
+            document.getElementById("taotrang").innerHTML=lienket;
+         }
+         function layurl2()
+         {  var url=window.location.href;
+                 var chuoitam=url.split('?');
+                 var chuoitamcon=chuoitam[1];
+                 var s="",lienket="",dem=0,sotrang=1;
+                 var chuoicon=chuoitamcon.split('&');
+                 var vitri=chuoicon[1];
+                 switch(chuoicon[0])
+            {   case 'ctt0':
+                var giay= Array("Nike Air Max 270 Blue","Nike Air Max Plus ","Nike zoom","Nike Roshe Run","Nike air zoom pegasus"),i,dem=0,gia=Array("1000000VNĐ");
+                for(i=vitri;i<giay.length;i++)
+                {
+                    dem++;
+                 s=s+'<a href="doan.html?ct0&'+i+'">'+'<div class="me" style="float:left;width:290px;height:350px;margin:10px 15px 0 40px;border:solid 1px red;box-shadow: 5px 5px 10px" align="center"><div style="width:290px;height:320px">'
+                 +'<img src="anh/Nike'+i+'.jpg" style="width:250px;height:250px" class="hover" />'+
+                 '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
+                 +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
+		'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                 if(dem==1) break;
+                 
+                }
+            
+                break;
+            case 'ctt1':
+                var giay =Array("Adidas running galaxy 2","Adidas running galaxy 3","Adidas yeezy boots 350 v2","Adidas thể thao st2043","Adidas nmd xr1");
+                var i,dem=0,gia= Array("10000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {dem++;
+                   s=s+'<a href="doan.html?ct1&'+i+'">'+
+                   '<div class="me" style=" float:left;width:290px;height:380px;margin:10px 15px 0 40px;border:solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                 +'<img src="anh/Adidas'+i+'.jpg" style="width:250px;height:250px " class="hover"/>'+
+                 '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
+                 +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
+		'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                 if(dem==1) break; 
+                }
+                
+                break;
+            case 'ctt2':
+                var giay=Array("Puma classic basket lfs 2","Puma classic basket lfs 3","Puma Trax","Puma Trax","Puma Tishatsu Runner Knit");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct2&'+i+'">'+
+                         '<div class="me" style=" float:left;width:290px;height:380px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                         +'<img src="anh/Puma'+i+'.jpg" style="width:250px;height:250px" class="hover" /> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+			'</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+
+                         
+                    if(dem==1) break;
+                }
+               
+               break;
+           case 'ctt3':
+               var giay=Array("Converse classic đen","Converse chuck 2","Converse classic đỏ","Converse chuck 2 trắng"," converse classic xám");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct3&'+i+'">'+
+                         '<div class"me" style=" float:left;width:290px;height:350px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         +'<img src="anh/Converse'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+                         '</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+                         
+                    if(dem==1) break;
+                }
+             
+               break;
+           case 'ctt4':
+               var giay=Array("Vans V183","Vans V185","Vans V1484","Vans V184","Cans V124");
+                var i,dem=0,gia=Array("100000vnđ");
+                for(i=vitri;i<giay.length;i++)
+                {   dem++;
+                    s=s+'<a href="doan.html?ct4&'+i+'">'+
+                         '<div class="me" style=" float:left;width:290px;height:350px;margin:10px 15px 0 40px;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         +'<img src="anh/Vans'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
+                         '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
+                         '</div></a>'+'<div style="margin-top:5px;color:black;float:left">Số lượng:<input type="number" min="1" name="soluong" style="width:30px"/></div></div>';
+
+                         
+                    if(dem==1) break;
+                }
+               
+               break;
+            }
+          
+            document.getElementById("taonoidung2").innerHTML=s;
+            
+         }
+         function taourl()
+         {  var url=window.location.href;
+            var chuoitam=url.split('?');
+            var chuoitam1=chuoitam[1];
+            var s="",dem=0,i;
+            var chuoicon=chuoitam1.split('&');
+            var vitri=chuoicon[1];
+            switch(chuoicon[0])
+            {
+                case 'ct0':
+                var giay= Array("Nike Air Max 270 Blue","Nike Air Max Plus ","Nike zoom","Nike Roshe Run","Nike air zoom pegasus");
+                var ct1=Array("Mẫu giầy giúp tăng chiều cao lên đên 3 cm","Công nghệ đệm đế Flyknit có tính chất tĩnh cho cấu trúc và độ bền, tạo cảm giác linh hoạt, thoái mái tối đa khi chạy"
+                        ,"Giày chất liệu tốt , nhẹ mang êm chân thoải mái.",
+                        "Giày Nike Roshe Run màu đen đế trắng là một siêu phẩm trong thế giới giày thể thao. Với Giày Nike Air Max bạn hoàn toàn nổi bật tại bất cứ nơi đâu.",
+                        " Là phiên bản mới nhất của dòng giày chạy bộ cao cấp Pegasus, giày Nike Air Zoom Pegasus 34 mang vẻ ngoài cực kì mạnh mẽ và nam tính, với cách phối màu mới lạ hoàn toàn.");
+                var ct2=Array("Thiết kế gọn, đơn giản giúp bạn có thể mix với rất nhiều bộ đồ để đi chơi, đi làm.","Thân giày với thiết kế đan cùng những lỗ trên lưỡi gà tạo sự thông thoáng khí tối đa.",
+                "Dễ dàng khi phối đồ, ngoài việc chính dùng để tập luyện bạn có thể kết hợp để đi chơi, dạo phố, Du lịch, Party, ...",""," Sự kết hợp của bộ đôi Cushlon ST cao cấp và hai túi khí Air Zoom tại đế giữa mang đến sự đàn hồi hay khả năng thích nghi trên đường chạy vô cùng thần thánh, cho bàn chân nguồn năng lượng vô tận.");
+                var ct3=Array("Đế giày thiết kế bằng cao su tự nhiên lâu bền, mềm dẻo, chân không có độ đàn hồi cao tạo cảm giác êm chân khi hoạt động.",
+                "Đệm cao su kết hợp với công nghệ đế Air Max giúp đôi giày có khả năng phản lực cực tốt.","","","Upper của giày Nike Air Zoom Pegasus 34 được nâng cấp và sử dụng chất liệu Flymesh cực nhẹ và siêu thoáng, cho bàn chân cảm giác thoải mái lâu dài.");
+                var ct4=Array("Chất liệu thấm mồ hôi khử mùi thông thoáng .","Đệm cao su kết hợp với công nghệ đế Air Max giúp đôi giày có khả năng phản lực cực tốt"
+                        ,"","","");
+                
+                var gia=Array("10000000000vnđ");
+                var dem=0;
+                for(i=vitri;giay.length;i++)
+                {dem++;
+                    s=s+'<div style="width:300px;height:400px;border:solid 1px red;float:left;margin:10px 15px 0 10px;box-shadow: 5px 5px 10px;" align="center">'+
+                       '<img src="anh/Nike'+i+'.jpg" style=" width:250px;height:250px"/>'+
+                       '<div style="font-size:40px">'+giay[i]+'</div>'+
+                         '<div style="font-size:40px;color:orange;margin-top:10px">'+gia[i]+'</div></div>'
+                         +'<div style="width:500px;height:400px;float:left">'+
+                         '<a href="doan.html?0&0"><div style="background-color:red;width:100px;color:black">về danh sách</div></a>'+
+                         '<div style="font-size:50px">Chi tiết sản phẩm :</div>'+
+                         '<div style="font-size:25px">'+ct1[i]+'</div>'+
+                         '<div style="font-size:25px">'+ct2[i]+'</div>'+
+                         '<div style="font-size:25px">'+ct3[i]+'</div>'+
+                         '<div style="font-size:25px>'+ct4[i]+'</div></div>';
+               if(dem==1) break;     
+                }
+                break;
+                case 'ct1':
+                var giay= Array("Adidas running galaxy 2","Adidas running galaxy 3","Adidas yeezy boots 350 v2","Adidas thể thao st2043","Adidas nmd xr1");
+                var gia=Array("10000vnđ");
+                var ct1=Array("Hàng chính hãng được mua trực tiếp từ Store Adidas Japan.","Hàng chính hãng được mua trực tiếp từ Store Adidas Japan.",
+                "Là dòng giày ADIDAS YEEZY được các bạn trẻ săn lùng.",
+                "Thiết Kế Đẹp, Giá Rẻ, Chất Liệu Tốt,mềm mại,đi không đau chân - Bạn có thể mang đi dạo phố, picnic cùng bạn bè, đi chơi xa .Với mẫu giày này bạn có thể kết hợp với quần jean-áo sơ mi hoặc áo thun.",
+                "Mang đến cho bạn phong cách trẻ trung năng động. Dễ dàng phối đồ với giày Adidas NMD là điều bạn dễ dàng nhận thấy");
+                var dem=0;
+                for(i=vitri;giay.length;i++)
+                {dem++;
+                    s=s+'<div style="width:300px;height:400px;border:solid 1px red;float:left;margin:10px 15px 0 10px;box-shadow: 5px 5px 10px;" align="center">'+
+                       '<img src="anh/Adidas'+i+'.jpg" style=" width:250px;height:250px"/>'+
+                       '<div style="font-size:40px">'+giay[i]+'</div>'+
+                         '<div style="font-size:40px;color:orange">'+gia[i]+'</div></div>'
+						 
+                         +'<div style="width:500px;height:400px;float:left">'+
+                         '<a href="doan.html?1&0"><div style="background-color:red;width:100px;color:black">về danh sách</div></a>'+
+                         '<div style="font-size:50px">Chi tiết sản phẩm :</div>'+
+                         '<div style="font-size:25px">'+ct1[i]+'</div></div>';
+               if(dem==1) break;     
+                }
+                break;
+                case 'ct2':
+                var giay= Array("Puma classic basket lfs 2","Puma classic basket lfs 3","Puma Trax","Puma Trax","Puma Tishatsu Runner Knit");
+                var gia=Array("10000vnđ");
+                var dem=0;
+                for(i=vitri;giay.length;i++)
+                {dem++;
+                    s=s+'<div style="width:300px;height:400px;border:solid 1px red;float:left;margin:10px 15px 0 10px;box-shadow: 5px 5px 10px;" align="center">'+
+                       '<img src="anh/Puma'+i+'.jpg" style=" width:250px;height:250px"/>'+
+                       '<div style="font-size:40px">'+giay[i]+'</div>'+
+                         '<div style="font-size:40px;color:orange">'+gia[i]+'</div></div>'
+						 +'<div style="width:500px;height:400px;float:left">'+
+                         '<a href="doan.html?2&0"><div style="background-color:red;width:100px;color:black">về danh sách</div></a>'+
+                         '<div style="font-size:50px">Chi tiết sản phẩm :</div>'+
+                         '<div style="font-size:25px">Đều có thể mặc đi hàng ngày và cũng là giày thể thao.</div></div>';
+               if(dem==1) break;     
+                }
+                break;
+                case 'ct3':
+                var giay= Array("Converse classic đen","Converse chuck 2","Converse classic đỏ","Converse chuck 2 trắng"," converse classic xám");
+                var gia=Array("10000vnđ");
+                var dem=0;
+                for(i=vitri;giay.length;i++)
+                {dem++;
+                    s=s+'<div style="width:300px;height:400px;border:solid 1px red;float:left;margin:10px 15px 0 10px;box-shadow: 5px 5px 10px;" align="center">'+
+                       '<img src="anh/Converse'+i+'.jpg" style=" width:250px;height:250px"/>'+
+                       '<div style="font-size:40px">'+giay[i]+'</div>'+
+                         '<div style="font-size:40px;color:orange">'+gia[i]+'</div></div>'
+                         +'<div style="width:500px;height:400px;float:left">'+
+                         '<a href="doan.html?3&0"><div style="background-color:red;width:100px;color:black">về danh sách</div></a>'+
+                         '<div style="font-size:50px">Chi tiết sản phẩm :</div>'+
+                          '<div style="font-size:25px">Chất liệu vải dệt mềm mại, êm chân.</div>'+
+                         '<div style="font-size:25px">Kiểu dáng trẻ trung, hợp thời trang.</div>'+
+                         '<div style="font-size:25px">Thiết kế mũi giày tròn kết hợp form ôm sát chân.</div>'+
+                         '<div style="font-size:25px">Gam màu trung tính, dễ phối đồ.</div>'+
+                         '</div>';
+               if(dem==1) break;     
+                }
+                break;
+                case 'ct4':
+                var giay= Array("Vans V183","Vans V185","Vans V1484","Vans V184","Cans V124");
+                var gia=Array("10000vnđ");
+                var ct1=Array("Đế bằng","Đế bằng","Đế cao","Đế bằng","Đế cao");
+                var dem=0;
+                for(i=vitri;giay.length;i++)
+                {dem++;
+                    s=s+'<div style="width:300px;height:400px;border:solid 1px red;float:left;margin:10px 15px 0 10px;box-shadow: 5px 5px 10px;" align="center">'+
+                       '<img src="anh/Vans'+i+'.jpg" style=" width:250px;height:250px"/>'+
+                       '<div style="font-size:40px">'+giay[i]+'</div>'+
+                         '<div style="font-size:40px;color:orange">'+gia[i]+'</div></div>'
+                         +'<div style="width:500px;height:400px;float:left">'+
+                         '<a href="doan.html?4&0"><div style="background-color:red;width:100px;color:black">về danh sách</div></a>'+
+                         '<div style="font-size:50px">Chi tiết sản phẩm :</div>'
+                 +'<div style="font-size:25px">'+ct1[i]+'</div>'+
+                        '</div>';
+               if(dem==1) break;     
+                }
+                break;
+            }
+          document.getElementById("taonoidung1").innerHTML=s;   
+         }
+         function timkiem()
+         {  var timkiem= document.getElementById("search").value;
+            var giay=Array("Nike","Adidas","Puma","Converse","Vans");
+            var giay1= Array("Nike Air Max 270 Blue","Nike Air Max Plus","Nike zoom","Nike Roshe Run","Nike air zoom pegasus");
+            var giay2= Array("Adidas running galaxy 2","Adidas running galaxy 3","Adidas yeezy boots 350 v2","Adidas thể thao st2043","Adidas nmd xr1");
+            var giay3= Array("Puma classic basket lfs 2","Puma classic basket lfs 3","Puma Trax","Puma Trax","Puma Tishatsu Runner Knit");
+            var giay4= Array("Converse classic đen","Converse chuck 2","Converse classic đỏ","Converse chuck 2 trắng"," converse classic xám");
+            var giay5= Array("Vans V183","Vans V185","Vans V1484","Vans V184","Cans V124");
+            var i,vitri=0,s=0;
+            for(i=0;i<giay.length;i++)
+            {s='doan.html?'+i+'&'+vitri;
+                        if(timkiem.toLowerCase()==giay[i].toLowerCase()) {window.location=s;}
+            }
+            for(i=0;i<giay1.length;i++)
+            {
+                s='doan.html?ctt0'+'&'+i;
+              if(timkiem.toLowerCase()==giay1[i].toLowerCase()) {window.location=s;}  
+            }
+            for(i=0;i<giay2.length;i++)
+            {
+                s='doan.html?ctt1'+'&'+i;
+              if(timkiem.toLowerCase()==giay2[i].toLowerCase()) {window.location=s;}  
+            }
+            for(i=0;i<giay3.length;i++)
+            {
+                s='doan.html?ctt2'+'&'+i;
+              if(timkiem.toLowerCase()==giay3[i].toLowerCase()) {window.location=s;}  
+            } 
+            for(i=0;i<giay4.length;i++)
+            {
+                s='doan.html?ctt3'+'&'+i;
+              if(timkiem.toLowerCase()==giay4[i].toLowerCase()) {window.location=s;}  
+            } 
+            for(i=0;i<giay5.length;i++)
+            {
+                s='doan.html?ctt4'+'&'+i;
+              if(timkiem.toLowerCase()==giay5[i].toLowerCase()) {window.location=s;}  
+            } 
+         }
+         window.onload=function()
+         {
+             menu();
+             layurl();
+             layurl2();
+             taourl();
+             timkiem();
+         }
+            </script>
+    </head>
+    <body style="width:100%;height:820px;
+        background: -moz-radial-gradient(center right, circle farthest-side, #ffffff 0%, #000099 100%);
+        background: -o-radial-gradient(center right, circle farthest-side, #ffffff 0%, #000099 100%);
+        background: -ms-radial-gradient(center right, circle farthest-side, #ffffff 0%, #000099 100%);
+        background: -webkit-radial-gradient(center right, circle farthest-side, #ffffff 0%, #000099 100%);">
+        <div class="head0">
+            <div class="welcome"><marquee>Welcome to The World Sport Shoes</marquee></div>
+            <div class="dk"><span>Tài khoản</span></div>
+            <div class="dn"><span> Đăng xuất</span></div>
+        </div>
+        <div class="head">
+            <div class="head1"> 
+                <div class="head4">Hãy mang những giấc mơ của bạn lên đôi chân </div>
+                <div class="head5">để dẫn lối giấc mơ đó thành hiện thực.</div>
+            <img src="doan.jpg" id="img"/>
+            <div id="div1">THE WORLD</div>
+            <div  id="div2">SPORT SHOES</div>
+        </div>
+            <div class="head2">
+                <input  id="search" type="text" name="timkiem" placeholder="Tìm kiếm sản phảm">
+                <button type="button" onClick="" class="img1"></button>
+                <button type="button" onClick="timkiem()"  class="img3"></button>
+            </div>
+        </div>
+        <div class="head3">
+            <a href="doan.html"><div class="row"  align="center"> Trang Chủ </div></a>
+            <div class="row1" align="center"> Giới Thiệu</div>
+            <div class="row1" align="center"> Tin tức-Sự kiện</div>
+            <div class="row1" align="center"> Hướng Dẫn Mua Hàng</div>
+            <div class="row1" align="center"> Bảo Hành</div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div id="menu2"> Danh Mục Sản Phẩm :</div>
+                <div id="menu"></div>
+            </div>
+            <div class="mid">
+                
+                <div id="taonoidung"></div>
+                    <div id="taonoidung1"></div>
+                    <div id="taonoidung2"></div>
+                
+            </div>
+        </div>
+        <div style="width:100%;height:20px" >
+            <div class="trang"> Trang :</div>
+        <div id="taotrang"></div>
+        </div>
+        <div class="footer">
+            <div class="footer0"><address>THE WORLD SPORT SHOES :</address></div>
+            <div class="footer1"><address>Địa chỉ :</address></div>
+            <div class="footer1"><address>Số điện thoại :</address></div>
+            <div class="footer1"><address>Địa chỉ email :</address></div>
+            <div class="footer1"><address>Facebook :</address></div>
+            
+            <hr style="height:3px;background-color:red">
+        </div>
+    </body>
+</html>

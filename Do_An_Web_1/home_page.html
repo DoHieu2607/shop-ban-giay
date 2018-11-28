@@ -1,0 +1,107 @@
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="./image/home_page/background/favicon.ico"/>
+<title>Home Page</title>
+<link rel="stylesheet" href="./css/home_page/home_page.css" />
+<script src="./javascript/home_page/popup.js">
+</script>
+</head>
+<body>
+<button class="open-button" onClick="openForm()">Đăng ký</button>
+<div class="form-popup" id="myForm">
+<form name="FormDk"  class="form-container" class="active1" id="sign" method="post" >
+	<div>
+		<label>Họ và tên:</label>
+		<input id="name" name="Name" type="text" size="30" placeholder="Họ và tên" autocomplete="off">
+	</div>
+	<div id="birthday">
+		<label>Ngày sinh:</label>
+		<select id="ngay"></select><script src="./javascript/home_page/Ngay.js"></script>
+		<select id="thang"></select><script src="./javascript/home_page/thang.js"></script>
+		<input id="nam" type="year" size="5">
+	</div>
+	<div id="phone">
+		<label>Số điện thoại:</label>
+		<input id="sdt" name="Phone" type="number" size="30" placeholder="Số điện thoại" min="1">
+        <br>
+        <span id="ph"></span>
+	</div>
+	<div>
+		<label>Email:</label>
+	    <input id="thu" type="email" name="Email"  size="30" placeholder="Email">
+	</div>
+	<div>
+		<label>Tên tài khoản:</label>
+		<input id="lg" name="Login" type="text" size="30" placeholder="Tên tài khoản" autocomplete="off">
+	</div>
+	<div>
+		<label>Mật khẩu:</label>
+		<input id="pass" name="Pass" type="password" size="30" placeholder="Mật khẩu">
+        <br>
+        <span id="p"></span>
+	</div>
+	<div>
+		<label>Nhập lại mật khẩu</label>
+		<input id="repass" name="RePass" type="password" size="30" placeholder="Nhập lại mật khẩu">
+        <br>
+        <span id="rp"></span>
+	</div>
+	<div>
+		<input id="accept" type="submit" class="btn1" value="Xác nhận" />	
+		<button type="reset" class="btn cancel" onClick="closeForm()">Đóng</button>	
+	</div>
+
+
+</form>
+<script src="./javascript/home_page/kiemtra.js">
+</script>
+</div>
+<button class="open-button1" onClick="openForm1()">Đăng nhập</button>
+<div class="form-popup1" id="myForm1">
+<form id="form-login" name="FormDn"  method="post" class="form-container1" class="active1">
+	<div class="sua1">
+		<label>Tên tài khoản:</label>
+		<input name="tenDn" type="text" id="username" size="30" placeholder="Tài khoản" autocomplete="off">
+	</div>
+	<div class="sua1">
+		<label>Mật khẩu:</label>
+		<input name="mk" type="password" id="password" size="30" placeholder="Mật khẩu" autocomplete="off">
+	</div>	
+	<div>
+		<input type="submit" class="btn1" value="Đăng nhập">
+   		<button type="reset" class="btn cancel" onClick="closeForm1()">Đóng</button>
+	</div>
+</form>
+</div>
+<script src="./javascript/home_page/kiemtraid.js">
+</script>
+</div>
+<div class="slideshow-container">
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/Adidas Yeezy.jpg"></div>
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/Adidas Yeezy.jpg"></div>
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/adidas-alphabounce-beyond-xam-trang-2018-2.jpeg"></div>	
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/2converse-chuck-taylor-ii-cao-co-mau-xanh-2-300x300.jpg"></div>
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/giay-converse-classic-do-tuoi-co-thap-e1534677579918-300x300.jpeg"></div>
+		<div class="mySlides">
+		<img src="./image/home_page/slideshow/giay-converse-classic-xam-co-cao-300x300.jpg"></div>
+	</div>
+<br>
+<div id="dots">
+	<span class="dot" onClick="currentSlide(1)"></span>
+	<span class="dot" onClick="currentSlide(2)"></span>
+	<span class="dot" onClick="currentSlide(3)"></span>
+	<span class="dot" onClick="currentSlide(4)"></span>
+	<span class="dot" onClick="currentSlide(5)"></span>
+	<span class="dot" onClick="currentSlide(6)"></span>
+</div>
+<script src="./javascript/home_page/slideshow.js"></script>
+</body>
+
+</html>
