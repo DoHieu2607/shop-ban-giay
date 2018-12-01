@@ -7,11 +7,13 @@
 <link rel="stylesheet" href="./css/home_page/home_page.css" />
 <script src="./javascript/home_page/popup.js">
 </script>
+<script src="javascript/home_page/check.js">
+</script>
 </head>
 <body>
 <button class="open-button" onClick="openForm()">Đăng ký</button>
 <div class="form-popup" id="myForm">
-<form name="FormDk"  class="form-container" class="active1" id="sign" method="post" >
+<form name="FormDk"  class="form-container" class="active1" id="sign" method="post"  >
 	<div>
 		<label>Họ và tên:</label>
 		<input id="name" name="Name" type="text" size="30" placeholder="Họ và tên" autocomplete="off">
@@ -52,11 +54,9 @@
 		<input id="accept" type="submit" class="btn1" value="Xác nhận" />	
 		<button type="reset" class="btn cancel" onClick="closeForm()">Đóng</button>	
 	</div>
-
-
-</form>
-<script src="./javascript/home_page/kiemtra.js">
+<script src="javascript/home_page/kiemtra.js">
 </script>
+</form>
 </div>
 <button class="open-button1" onClick="openForm1()">Đăng nhập</button>
 <div class="form-popup1" id="myForm1">
@@ -74,9 +74,9 @@
    		<button type="reset" class="btn cancel" onClick="closeForm1()">Đóng</button>
 	</div>
 </form>
-</div>
-<script src="./javascript/home_page/kiemtraid.js">
+<script src="javascript/home_page/kiemtraid.js">
 </script>
+</div>
 </div>
 <div class="slideshow-container">
 		<div class="mySlides">
