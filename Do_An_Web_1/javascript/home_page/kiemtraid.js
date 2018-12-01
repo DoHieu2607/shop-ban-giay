@@ -12,10 +12,10 @@ if(formLogin.attachEvent) {
 function onFormSubmit(e) {
 	
     if(e.preventDefault) e.preventDefault();
-	 var username = inputUsername.value;
+	var username = inputUsername.value;
     var password = inputPassword.value;
-	var CORRECT_USER = window.localStorage.getItem("UserName");
-	var CORRECT_PASS = window.localStorage.getItem("UserPassword");
+	var newUser = new User(username, password);
+    var listUser = getArrayUser();
 	if(username == "")
 	{
 		alert("Hãy nhập tên tài khoản");
@@ -28,10 +28,13 @@ function onFormSubmit(e) {
 		document.form-login.mk;
 		return false;
 	}
-    if(username == CORRECT_USER && password == CORRECT_PASS) {
-        window.location = 'main_page.html';
-    } else {
-  		alert("tên đăng nhập hoặc mật khẩu không đúng");
+	for (var u of listUser) {
+        if (equalUser(newUser, u)) {
+            setDataUser(u);
+			window.location ='main_page.html';
+            return false;
+        }
     }
+    alert('Nhập sai tên hoặc mật khẩu !!!');
     return false;
 }

@@ -5,7 +5,6 @@ var login = document.getElementById('lg');
 var p = document.getElementById('pass');
 var rp = document.getElementById('repass');
 var formSign = document.getElementById('sign');
-
 if(formSign.attachEvent) {
     formSign.attachEvent('submit', onFormSign);
 } else {
@@ -22,8 +21,8 @@ function onFormSign(e)
 	var Tentaikhoan = login.value;
 	var Matkhau = p.value;
 	var Mk = rp.value;
-	window.localStorage.setItem("UserName",Tentaikhoan);
-	window.localStorage.setItem("UserPassword",Matkhau);
+	var newUser = new User(Tentaikhoan, Matkhau, Ten, Sodt, Thu);
+    var listUser = getArrayUser();
 	if(Ten == "")
 	{
 		alert("Hãy nhập tên của bạn!");
@@ -89,8 +88,13 @@ function onFormSign(e)
 										return false;
 									}
 									else{
-										document.getElementById('p').innerHTML = "";
-										window.location ='home_page.html';
+										 document.getElementById('p').innerHTML = "";
+									    listUser.push(newUser);
+									    window.localStorage.setItem('ArrayUser', JSON.stringify(listUser));
+    									window.localStorage.setItem('DataUser', JSON.stringify(newUser));
+   									    location.reload();
+										alert("Đăng ký thành công ! ");
+										return false;
 									}
 								}
 							}
