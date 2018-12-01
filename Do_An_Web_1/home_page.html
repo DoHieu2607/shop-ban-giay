@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./css/home_page/home_page.css" />
 <script src="./javascript/home_page/popup.js">
 </script>
+<script>
 function getDataUser() {
     return JSON.parse(window.localStorage.getItem('DataUser'));
 }
@@ -49,6 +50,7 @@ function updateListUser(u) {
 function equalUser(u1, u2) {
 	return (u1.userName == u2.userName && u1.passWord == u2.passWord);
 }
+	</script>
 </head>
 <body>
 <button class="open-button" onClick="openForm()">Đăng ký</button>
