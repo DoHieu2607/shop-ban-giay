@@ -26,14 +26,12 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
     float:left;
     font-size: 1.5vw; 
 }
-.dk:hover{
-    background-color: red;
-    color:white
-}
+#link1:visited {color: black;}
 .dn:hover{
     background-color: red;
     color:white
 }
+#user{border-radius: 10px;position: relative;left: 15%;bottom: 30%;width: 13vw;height: 2vh}
 .head{
 width:100%;
 height:23vh;
@@ -111,8 +109,8 @@ height:23vh;
 .row1,.dd{
     position: relative;
     left: 20%;
-    height: 4vh;
-    margin-left:4vw;
+    height: 3.6vh;
+    margin:0.2vh 4vw 0.2vh 0;
     float:left;
     font-size:1.5vw; 
    
@@ -212,13 +210,13 @@ a{
 }
 .trang{
     float:left;
-    position:absolute;
-    left:700px;
+    position:relative;
+    left:45%;
 }
 #taotrang{
     float:left;
-    position:absolute;
-    left:750px
+    position: relative;
+    left:48%;
 }
 
 .footer0{
@@ -239,3 +237,4 @@ a{
     -ms-transform: scale(1.3,1.3);-webkit-transform: scale(1.3,1.3);transform: scale(1.3,1.3);
 }
  hr{height:3px;background-color:red;}
+ table,tr,td{border:2px solid white;color:white}
