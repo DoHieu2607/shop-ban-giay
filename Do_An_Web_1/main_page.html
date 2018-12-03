@@ -5,12 +5,19 @@
         <link rel="shortcut icon" href="./image/main_page/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="./css/main_page/main_page.css"/>
         <script type="text/javascript" src="./javascript/main_page/main_page.js"></script>
+		<script type="text/javascript" src="javascript/home_page/check.js"></script>
+
     </head>
     <body>
         <div class="head0">
             <marquee class="mq" direction="right" scrollamount="15">Welcome to The World Sport Shoes</marquee>
             <div class="dk"><span>Tài khoản</span></div>
-            <div class="dn"><span> Đăng xuất</span></div>
+			<input type="text" id="user" readonly="readonly">
+			<script type="text/javascript">
+				var tenTaiKhoan = window.localStorage.getItem("tenTaiKhoan");
+				document.getElementById("user").value = tenTaiKhoan;
+			</script>
+            <div class="dn"><a href="./home_page.html" target="_self" onClick="dangXuat()" id="link1">Đăng xuất</a></div>
         </div>
         <div class="head">
             <img src="./image/main_page/logo.jpg" id="img"/>
@@ -35,7 +42,8 @@
             <div class="row1" align="center"> Hướng Dẫn Mua Hàng</div>
             <div class="row1" align="center"> Bảo Hành</div>
         </div>
-        <div class="content">
+        <div id="shop1"></div>
+        <div class="content" id="content">
             <div class="left">
                 <div id="menu2"> Danh Mục Sản Phẩm </div>
                 <div id="menu"></div>
@@ -45,6 +53,7 @@
                 <div id="taonoidung"></div>
                     <div id="taonoidung1"></div>
                     <div id="taonoidung2"></div>
+                    
                 
             </div>
         </div>

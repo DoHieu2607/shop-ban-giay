@@ -7,55 +7,16 @@
 <link rel="stylesheet" href="./css/home_page/home_page.css" />
 <script src="./javascript/home_page/popup.js">
 </script>
-<script>
-function getDataUser() {
-    return JSON.parse(window.localStorage.getItem('DataUser'));
-}
-function User(username,password,ten,sdt,email)
-{
-	this.userName = username;
-	this.passWord = password;
-	this.name = ten;
-	this.phone = sdt;
-	this.eMail = email;
-}
-function setDataUser(ds) {
-    window.localStorage.setItem('DatatUser', JSON.stringify(ds));
-}
-
-// Hàm get set cho danh sách người dùng
-function getArrayUser() {
-    var data = JSON.parse(window.localStorage.getItem('ArrayUser')) || []
-    var l = [];
-    for (var d of data) {
-        l.push(d);
-    }
-    return l;
-}
-
-function setArrayUser(au) {
-    window.localStorage.setItem('ArrayUser', JSON.stringify(au));
-}
-
-
-function updateListUser(u) {
-    var list = getArrayUser();
-    for (var i = 0; i < list.length; i++) {
-        if (equalUser(u, list[i])) {
-            list[i] = u;
-        }
-    }
-    setListUser(list);
-}
-function equalUser(u1, u2) {
-	return (u1.userName == u2.userName && u1.passWord == u2.passWord);
-}
-	</script>
+<script src="javascript/home_page/check.js">
+</script>
 </head>
 <body>
+<img src="./image/home_page/background/logo.jpg" id="img1">
+<div id="name1">The World</div>
+<div id="name2">Sport Shoes </div>
 <button class="open-button" onClick="openForm()">Đăng ký</button>
 <div class="form-popup" id="myForm">
-<form name="FormDk"  class="form-container" class="active1" id="sign" method="post"  >
+<form name="FormDk"  class="form-container" class="active1" id="sign" method="post" >
 	<div>
 		<label>Họ và tên:</label>
 		<input id="name" name="Name" type="text" size="30" placeholder="Họ và tên" autocomplete="off">
@@ -64,7 +25,7 @@ function equalUser(u1, u2) {
 		<label>Ngày sinh:</label>
 		<select id="ngay"></select><script src="./javascript/home_page/Ngay.js"></script>
 		<select id="thang"></select><script src="./javascript/home_page/thang.js"></script>
-		<input id="nam" type="year" size="5">
+		<input id="nam" type="number" size="5" style="width: 50px" min="1990">
 	</div>
 	<div id="phone">
 		<label>Số điện thoại:</label>
@@ -96,9 +57,11 @@ function equalUser(u1, u2) {
 		<input id="accept" type="submit" class="btn1" value="Xác nhận" />	
 		<button type="reset" class="btn cancel" onClick="closeForm()">Đóng</button>	
 	</div>
-<script src="javascript/home_page/kiemtra.js">
-</script>
+
+
 </form>
+<script src="./javascript/home_page/kiemtra.js">
+</script>
 </div>
 <button class="open-button1" onClick="openForm1()">Đăng nhập</button>
 <div class="form-popup1" id="myForm1">
@@ -116,23 +79,23 @@ function equalUser(u1, u2) {
    		<button type="reset" class="btn cancel" onClick="closeForm1()">Đóng</button>
 	</div>
 </form>
-<script src="javascript/home_page/kiemtraid.js">
-</script>
 </div>
+<script src="./javascript/home_page/kiemtraid.js">
+</script>
 </div>
 <div class="slideshow-container">
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/Adidas Yeezy.jpg"></div>
+		<img src="./image/home_page/slideshow/giay-adidas-nhat-ban.jpg" id="img2"></div>
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/Adidas Yeezy.jpg"></div>
+		<img src="./image/home_page/slideshow/Adidas Yeezy.jpg" id="img2"></div>
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/adidas-alphabounce-beyond-xam-trang-2018-2.jpeg"></div>	
+		<img src="./image/home_page/slideshow/giay-adidas-namd-xr1-mau-den-2.jpg" id="img2"></div>	
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/2converse-chuck-taylor-ii-cao-co-mau-xanh-2-300x300.jpg"></div>
+		<img src="./image/home_page/slideshow/2converse-chuck-taylor-ii-cao-co-mau-xanh-2-300x300.jpg" id="img2"></div>
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/giay-converse-classic-do-tuoi-co-thap-e1534677579918-300x300.jpeg"></div>
+		<img src="./image/home_page/slideshow/giay-adidas-the-thao-st2043-den.jpg" id="img2"></div>
 		<div class="mySlides">
-		<img src="./image/home_page/slideshow/giay-converse-classic-xam-co-cao-300x300.jpg"></div>
+		<img src="./image/home_page/slideshow/giay-converse-classic-xam-co-cao-300x300.jpg" id="img2"></div>
 	</div>
 <br>
 <div id="dots">
