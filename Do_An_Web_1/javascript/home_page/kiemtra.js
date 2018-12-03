@@ -21,7 +21,8 @@ function onFormSign(e)
 	var Tentaikhoan = login.value;
 	var Matkhau = p.value;
 	var Mk = rp.value;
-	var newUser = new User(Tentaikhoan, Matkhau, Ten, Sodt, Thu);
+	var stt = "false";
+	var newUser = new User(Tentaikhoan, Matkhau, Ten, Sodt, Thu,stt);
     var listUser = getArrayUser();
 	if(Ten == "")
 	{

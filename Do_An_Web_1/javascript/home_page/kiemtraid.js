@@ -14,6 +14,7 @@ function onFormSubmit(e) {
     if(e.preventDefault) e.preventDefault();
 	var username = inputUsername.value;
     var password = inputPassword.value;
+	var stt = "false";
 	var newUser = new User(username, password);
     var listUser = getArrayUser();
 	if(username == "")
@@ -29,11 +30,12 @@ function onFormSubmit(e) {
 		return false;
 	}
 	for (var u of listUser) {
-        if (equalUser(newUser, u)) {
-            setDataUser(u);
+        if (equalUser(newUser, u)) { 
+			window.localStorage.setItem("tenTaiKhoan",newUser.userName);
 			window.location ='main_page.html';
             return false;
         }
+		setArrayUser(listUser);
     }
     alert('Nhập sai tên hoặc mật khẩu !!!');
     return false;
