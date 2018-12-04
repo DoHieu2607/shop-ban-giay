@@ -24,10 +24,10 @@ app.controller('listData', function($scope) {
 			{img:'image/main_page/anh/Converse3.jpg',"id":20,"name":"Converse chuck 2 trắng","company":"Converse","price":"2500000 VND"},
 			{img:'image/main_page/anh/Converse4.jpg',"id":21,"name":"converse classic xám","company":"Converse","price":"2600000 VND"},
 			{img:'image/main_page/anh/Vans0.jpg',"id":22,"name":"Vans V183","company":"Vans","price":"1000000 VND"},
-			{img:'image/main_page/anh/vans1.jpg',"id":23,"name":"Vans V185","company":"Vans","price":"1500000 VND"},
-			{img:'image/main_page/anh/vans2.jpg',"id":24,"name":"Vans V1484","company":"Vans","price":"2000000 VND"},
-			{img:'image/main_page/anh/vans3.jpg',"id":25,"name":"Vans V184","company":"Vans","price":"2500000 VND"},
-			{img:'image/main_page/anh/vans4.jpg',"id":26,"name":"Cans V124","company":"Vans","price":"2600000 VND"},
+			{img:'image/main_page/anh/Vans1.jpg',"id":23,"name":"Vans V185","company":"Vans","price":"1500000 VND"},
+			{img:'image/main_page/anh/Vans2.jpg',"id":24,"name":"Vans V1484","company":"Vans","price":"2000000 VND"},
+			{img:'image/main_page/anh/Vans3.jpg',"id":25,"name":"Vans V184","company":"Vans","price":"2500000 VND"},
+			{img:'image/main_page/anh/Vans4.jpg',"id":26,"name":"Cans V124","company":"Vans","price":"2600000 VND"},
 			]
    $scope.data=daTa;
 });
