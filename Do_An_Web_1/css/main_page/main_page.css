@@ -1,15 +1,16 @@
 *{margin:0;padding: 0;} html,body{width: 100%;}
-body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: cover;}
+body{background-color: white;}
 .head0{
     width: 100%;
     height:3.2vh;
-    background-color:aliceblue;
+    background-color:black;
     opacity: 0.8;
 }
 .mq{
   width:40%;
   height:3.2vh;
-  color:red;
+  color:white;
+  font-weight: bold;
   font-size:1.5vw;
   font-size:1.5vw;
 }
@@ -19,6 +20,7 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
     height: 100%;
     float:left;
     font-size:1.5vw;
+    color:silver;
 }
 #user {text-align: center;
        font-weight: bold;
@@ -30,10 +32,10 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
     left:80%;
     height: 100%;
     float:left;
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
+    color: white; 
 }
-#link1:visited {color: black;}
-.dx:hover{
+.dx a:hover{
     background-color: red;
     color:white;
 }
@@ -71,18 +73,16 @@ height:23vh;
     position: absolute;
     left:35%;
     top:5%;
-    font-family:sans-serif;
-    color:white;text-shadow: -3px -3px 6px black;
-    font-weight: bolder 
+    font-family:"Bodoni MT";
+    color:black;
 }
 .head5{
     font-size:2vw;
     position:absolute;
     left:50%;
     top:10%;
-    font-family:sans-serif;
-    color:white;text-shadow: -3px -3px 6px black;
-    font-weight: bolder 
+    font-family:"Bodoni MT";
+    color:black;
 }
 .head4,.head5 {text-transform: capitalize;}
 #search{
@@ -91,16 +91,23 @@ height:23vh;
     right: 14%;
     width:50vw;
     height:4vh;
+    color:darkblue;
+    background-color: lightpink;
 }
 .dsdm{
-    width: 5vw;
+    width: 6vw;
     height: 5vh;
     position:relative;
     left: 52%;
     top:7%;
-    font-size: 0.7vw;
+    background-color: black;
+    color:white;
+    font-size: 0.8vw;
+    font-weight: bold;
+    font-family: "Bodoni MT";
     border-radius: 5px;
     border:none;
+    cursor: pointer;
 }
 .dsdm:hover{background-color: red;color: white}
 .img3{
@@ -112,10 +119,11 @@ height:23vh;
     background:url(timkiem1.png) no-repeat;
 }
 .head3{
-    width:100%;height:4vh;background-color:antiquewhite;opacity: 0.9
+    width:100%;height:4vh;background-color:black;opacity: 0.9
 }
-
+.row1 a{color: white}
 .row1,.dd{
+    color: white;
     position: relative;
     left: 20%;
     height: 3.6vh;
@@ -128,12 +136,12 @@ height:23vh;
     background-color: blueviolet;
     color:white
 }
-.row1:hover,.dd:hover{
+.row1 a:hover,.dd:hover{
     background-color: blueviolet;
     color:white
 }
 a{
-    text-decoration:none   
+    text-decoration:none; 
 }
 .dd
 {
@@ -180,7 +188,7 @@ a{
     top: 2%;
     width:20%;
     max-height:420px;
-    background-color:lightgrey;
+    background-color:black;
     float:left;
     opacity: 0.9;
     border-radius: 10px;
@@ -218,11 +226,11 @@ a{
     border-radius: 15px
 }
 .menu1{
-    color:black;
+    border:1px solid white;
+    color:white;
     font-size:20px;
     height:40px;
     margin-top:2%;
-    border:solid 2px aqua;
     padding-top:6%;border-radius:10px;
 }
 .menu1:hover{
@@ -230,7 +238,7 @@ a{
     color: white
 }
 #menu2{
-    background-color: aqua;
+    color:white;
     height: 6vh;
     padding: 1vh 0;
     font-size: 2vw;
@@ -258,16 +266,28 @@ a{
     opacity: 0.8;
 } 
 .footer1{
+    background-color: black;
     height: 4.5vh;
-    color: white;
+    color: silver;
     font-size:1.65vw;
 }
 .hover:hover{
     -ms-transform: scale(1.3,1.3);-webkit-transform: scale(1.3,1.3);transform: scale(1.3,1.3);
 }
  hr{height:3px;background-color:red;}
- table,tr,td{border:2px solid white;color:white}
-a
+ table,tr,td,th{border:2px dotted grey;color:black;background-color: silver;font-size: 30px;margin:30px auto;}
+#menu a
 {
-	color:black;
+	color:white;
+}
+.slideshow-container{
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top:0;
+    left:2%;
+}
+.trangchu{height:300px}
+.img2{
+    outline: 10px solid black;
 }
