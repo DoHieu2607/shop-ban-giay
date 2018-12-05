@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="adminApp">
+<head>
+<meta content="text/html; charset=utf-8" />
+<title>admin</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="../css/admin_page/admin.css" type="text/css" rel="stylesheet">
+<script src="../javascript/chart/Chart.min.js"></script>
+</head>
+<body>
+<div id="header">
+	<span>Admin Page </span>
+</div>
+<div id="sidebar1">
+<ul id="bar">
+		<li class="bar2"><a href="admin.html">Thống kê</a></li>
+	<li class="bar2"><a href="khachhang.html">Quản lý khách hàng</a> </li>
+	<li class="bar2"><a href="customer.html">Quản lý sản phẩm</a></li>
+	<li class="bar2"><a href="package.html">Quản lý đơn hàng</a></li>
+	<li class="bar2"><a href="complain.html">Ý kiến khách hàng</a></li>
+</ul>
+<div><img src="./image/main_page/logo.jpg" id="img"/></div>
+</div>
+<div id="data">
+	<div id="headerdata">
+		<span id="childata">Thống kê chi tiết:</span>
+	</div>
+	<div id="myChart">
+		<canvas id="chart"></canvas>
+		<script src="../javascript/admin/barChart.js"></script>
+	<div>
+	<div class="customer">
+		<div class="vipcustomer">KHÁCH HÀNG THÂN THIẾT</div>
+		<table id="customer_table">
+			<thead>
+				<tr>
+					<td width="15%">Họ tên</td>
+					<td width="10%">Xếp hạng</td>
+					<td width="20%">Email</td>
+					<td width="20%">Tổng số tiền</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<span>Nguyễn Tường Vy</span>
+					</td>
+					<td>1
+					</td>
+					<td><span>vymeo@gmail.com</span>
+					</td>
+					<td>230.555.000
+						<label>đồng</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Nguyễn Hoàng Lâm</span>
+					</td>
+					<td>2
+					</td>
+					<td><span>lamlun@gmail.com</span>
+					</td>
+					<td>120.900.000 <label>đồng</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Võ Minh Thuận</span>
+					</td>
+					<td>3
+					</td>
+					<td><span>minhthuan@gmail.com</span>
+					</td>
+					<td>100.600.000<label>đồng</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Tiến Dũng</span>
+					</td>
+					<td>4
+					</td>
+					<td><span>dung123@gmail.com</span>
+					</td>
+					<td>99.555.000 <label>đồng</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+</body>
+
+</html>

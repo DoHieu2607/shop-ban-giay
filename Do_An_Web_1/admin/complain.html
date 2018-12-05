@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="complainApp">
+<head>
+<meta content="text/html; charset=UTF-8" />
+<title>admin</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="../css/admin_page/admin.css" type="text/css" rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+<div id="header">
+	<span>Admin Page </span>
+</div>
+<div id="sidebar1">
+<ul id="bar">
+	<li class="bar2"><a href="admin.html">Thống kê</a></li>
+	<li class="bar2"><a href="khachhang.html">Quản lý khách hàng</a> </li>
+	<li class="bar2"><a href="customer.html">Quản lý sản phẩm</a></li>
+	<li class="bar2"><a href="package.html">Quản lý đơn hàng</a></li>
+	<li class="bar2"><a href="complain.html">Ý kiến khách hàng</a></li>
+</ul>
+<div><img src="./image/main_page/logo.jpg" id="img"/></div>
+</div>
+<div id="data">
+<div id="headerdata" >
+	<span id="childata">DANH SÁCH PHẢN HỒI</span>
+</div>
+<div class="listComplain">
+		<div class="container" ng-controller="listComplain">   
+		<table id="complain_table">
+			<thead>
+      	<tr>
+			<td>Số thứ tự</td>
+        	<td>Tên khách hàng</td>
+        	<td>Ngày</td>
+        	<td>Phản hồi</td>
+     	 </tr>
+  		  </thead>
+			<tbody>
+      <tr dir-paginate="val in data|orderBy:sortKey:reverse|itemsPerPage:5">
+        <td >{{val.stt}}</td>
+		<td >{{val.name}}</td>
+        <td>{{val.date}}</td>
+        <td>{{val.rep}}</td>
+    </tbody>
+		</table>
+		 <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true">
+		</dir-pagination-controls>
+	</div>
+</div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="../javascript/admin/complain.js"></script>
+<script src="../javascript/admin/dirPagination.js"></script>
+</html>

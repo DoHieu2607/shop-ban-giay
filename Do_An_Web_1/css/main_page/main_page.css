@@ -11,6 +11,7 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
   height:3.2vh;
   color:red;
   font-size:1.5vw;
+  font-size:1.5vw;
 }
 .dk{position:relative;
     top: 0.5%;
@@ -19,7 +20,12 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
     float:left;
     font-size:1.5vw;
 }
-.dn{position:relative;
+#user {text-align: center;
+       font-weight: bold;
+       letter-spacing: 1px;
+       color:darkblue;
+       background-color: lightpink;}
+.dx{position:relative;
     top: 0.5%;
     left:80%;
     height: 100%;
@@ -27,9 +33,9 @@ body{background:url("../../image/main_page/b1.jpg") no-repeat;background-size: c
     font-size: 1.5vw; 
 }
 #link1:visited {color: black;}
-.dn:hover{
+.dx:hover{
     background-color: red;
-    color:white
+    color:white;
 }
 #user{border-radius: 10px;position: relative;left: 15%;bottom: 30%;width: 13vw;height: 2vh}
 .head{
@@ -86,19 +92,22 @@ height:23vh;
     width:50vw;
     height:4vh;
 }
-.img1{
-    width: 3%;
-    height:4.5%;
-    position:absolute;
-    left:90%;
-    top:18%;
-    background: url(giohang.png) no-repeat;
+.dsdm{
+    width: 5vw;
+    height: 5vh;
+    position:relative;
+    left: 52%;
+    top:7%;
+    font-size: 0.7vw;
+    border-radius: 5px;
+    border:none;
 }
+.dsdm:hover{background-color: red;color: white}
 .img3{
-    height:4.5%;
-    width: 3%;
-    position:absolute;
-    left:86.5%;
+    height: 38px;
+    width: 42px;
+    position: relative;
+    left: 42%;
     top:18%;
     background:url(timkiem1.png) no-repeat;
 }
@@ -138,7 +147,7 @@ a{
     text-decoration: none;
     color:black;
     background-color:white;
-    width:141px;
+    width:220%;
     text-align: left;
     padding:14px 16px;
 }
@@ -152,8 +161,8 @@ a{
 {
     display:none;
     position:absolute;
-    top:50px;
-    right:-33px;
+    top:106%;
+    right:60%;
     box-sizing:border-box;
     
 }
@@ -177,11 +186,31 @@ a{
     border-radius: 10px;
 }
 .mid{
+    opacity: 0.9;
     width:80%;
     height:100%;
     float:left;
     overflow-y:auto;
 }
+
+#taonoidung
+{
+	text-align: center;
+	padding-top: 2%;
+	color:#E3E3E3;
+}
+#taonoidung1
+{
+	background-color: white;
+	padding-left: 2%;
+}
+.hr
+{
+	background-color:#646464;
+	height:auto;
+}
+
+
 .footer{
     width:100%;
     height:200px;
@@ -238,3 +267,7 @@ a{
 }
  hr{height:3px;background-color:red;}
  table,tr,td{border:2px solid white;color:white}
+a
+{
+	color:black;
+}

@@ -23,7 +23,7 @@ function menu()
                 {
                     dem++;
                  s=s+'<a href="main_page.html?ct0&'+i+'">'+
-                 '<div class="me" style="float:left;width:290px;height:330px;margin:5% 2% 0 5%;border:solid 1px red;box-shadow: 5px 5px 10px" align="center"><div style="width:100%;height:320px">'
+                 '<div class="me" style="float:left;width:290px;height:330px;margin:2% 2% 0 5%;border:solid 1px red;box-shadow: 5px 5px 10px" align="center"><div style="width:100%;height:320px">'
                  +'<img src="image/main_page/anh/Nike'+i+'.jpg" style="width:250px;height:250px" class="hover" />'+
                  '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
                  +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
@@ -39,7 +39,7 @@ function menu()
                 for(i=vitri;i<giay.length;i++)
                 {dem++;
                    s=s+'<a href="main_page.html?ct1&'+i+'">'+
-                   '<div class="me" style=" float:left;width:290px;height:360px;margin:5% 2% 0 5%;border:solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                   '<div class="me" style=" float:left;width:290px;height:360px;margin:2% 2% 0 5%;border:solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
                  +'<img src="image/main_page/anh/Adidas'+i+'.jpg" style="width:250px;height:250px " class="hover"/>'+
                  '<div style="font-size: 30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'
                  +'<div style="font-size: 30px;background-color: antiquewhite;color: orange">'+gia[i]+'</div>'+
@@ -54,7 +54,7 @@ function menu()
                 for(i=vitri;i<giay.length;i++)
                 {   dem++;
                     s=s+'<a href="main_page.html?ct2&'+i+'">'+
-                         '<div class="me" style=" float:left;width:290px;height:360px;margin:5% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
+                         '<div class="me" style=" float:left;width:290px;height:360px;margin:2% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:352px">'
                          +'<img src="image/main_page/anh/Puma'+i+'.jpg" style="width:250px;height:250px" class="hover" /> '+
                          '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
                          '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
@@ -71,7 +71,7 @@ function menu()
                 for(i=vitri;i<giay.length;i++)
                 {   dem++;
                     s=s+'<a href="main_page.html?ct3&'+i+'">'+
-                         '<div class"me" style=" float:left;width:290px;height:330px;margin:5% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         '<div class"me" style=" float:left;width:290px;height:330px;margin:2% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
                          +'<img src="image/main_page/anh/Converse'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
                          '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
                          '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
@@ -87,7 +87,7 @@ function menu()
                 for(i=vitri;i<giay.length;i++)
                 {   dem++;
                     s=s+'<a href="main_page.html?ct4&'+i+'">'+
-                         '<div class="me" style=" float:left;width:290px;height:330px;margin:5% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
+                         '<div class="me" style=" float:left;width:290px;height:330px;margin:2% 2% 0 5%;border: solid 1px red;box-shadow: 5px 5px 10px;" align="center"><div style="width:290px;height:320px">'
                          +'<img src="image/main_page/anh/Vans'+i+'.jpg" style="width:250px;height:250px" class="hover"/> '+
                          '<div style="font-size:30px;background-color: antiquewhite;color:black">'+giay[i]+'</div>'+
                          '<div style="font-size:30px;background-color: antiquewhite;color:orange">'+gia[i]+'</div>'+
@@ -409,8 +409,8 @@ function menu()
                 '<td align="center"><input type="number" name="soluong" id="sluong" onchange="test(this.value)" min="1" value="1"/></td>'+
             '</tr>'
         		+'</table>'
-        	 +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px"/></span>'
-        	+'<input type="button" name="button" onclick="alert("thanh toán thành công")" value="Thanh Toán" style="position:relative;left:56%"/>'; 
+        	 +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px;text-align:center"/></span>'
+        	+'<input type="button" name="button" onclick=success() value="Thanh Toán" style="position:relative;left:56%"/>'; 
         if(dem==1) break;
 
         }break;
@@ -436,8 +436,8 @@ function menu()
                 '<td align="center"><input type="number" name="soluong" id="sluong" onchange="test(this.value)" min="1" value="1"/></td>'+
             '</tr>'+
         	'</table>'
-	        +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px"/></span>'
-	        +'<input type="button" name="button" onclick="alert("Thanh Toán Thành Công !!!")" value="Thanh Toán" style="position:relative;left:56%"/>'; 
+	        +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px;text-align:center"/></span>'
+	        +'<input type="button" name="button" onclick=success() value="Thanh Toán" style="position:relative;left:56%"/>'; 
         if(dem==1) break;
 
         }break;
@@ -463,8 +463,8 @@ function menu()
                 '<td align="center"><input type="number" name="soluong" id="sluong" onchange="test(this.value)" min="1" value="1"/></td>'+
             '</tr>'+
         '</table>'
-	        +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px"/></span>'
-	        +'<input type="button" name="button" onclick="alert("thanh toán thành công")" value="Thanh Toán" style="position:relative;left:56%"/>';  
+	        +'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px;text-align:center"/></span>'
+	        +'<input type="button" name="button" onclick=success() value="Thanh Toán" style="position:relative;left:56%"/>';  
         if(dem==1) break;
 
         }break;
@@ -490,8 +490,8 @@ function menu()
                 '<td align="center"><input type="number" name="soluong" id="sluong" onchange="test(this.value)" min="1" value="1"/></td>'+
             '</tr>'+
         '</table>'
-       		+'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px"/></span>'
-        	+'<input type="button" name="button" onclick="alert("thanh toán thành công")" value="Thanh Toán" style="position:relative;left:56%"/>';  
+       		+'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px;text-align:center"/></span>'
+        	+'<input type="button" name="button" onclick=success() value="Thanh Toán" style="position:relative;left:56%"/>';  
         if(dem==1) break;
 
         }break;
@@ -517,8 +517,8 @@ function menu()
                 '<td align="center"><input type="number" name="soluong" id="sluong" onchange="test(this.value)" min="1" value="1"/></td>'+
             '</tr>'+
         '</table>'
-        	+'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px"/></span>'
-        	+'<input type="button" name="button" onclick="alert("thanh toán thành công")" value="Thanh Toán" style="position:relative;left:56%"/>';  
+        	+'<span style="background-color:lightyellow;color:darkred;position:relative;left:55%">Thành Tiền<input type="text" id="text"  readonly="readonly" style="border-radius:10px;text-align:center"/></span>'
+        	+'<input type="button" name="button" onclick=success() value="Thanh Toán" style="position:relative;left:56%"/>';  
         if(dem==1) break;
 
         }break;
@@ -535,6 +535,18 @@ document.getElementById("shop1").innerHTML=s;
              else {var soluong=parseInt(tam); s=gia*soluong;}
              document.getElementById("text").value=s+" "+"VNĐ";
             }
+        function success()
+        {
+        	var user1=document.getElementById("user").value;
+        	if(user1=="")
+        	{
+        		alert("Thanh toán không thành công do lỗi hiển thị tên tài khoản - Quý khách vui lòng đăng nhập lại - Xin lỗi quý khách vì sự cố này !!!");
+        	}else{
+        		confirm("Thanh toán thành công - Quay về trang chủ !!!");
+        		window.location.href="main_page.html";
+
+        	}
+        }
          window.onload=function()
          {
              menu();

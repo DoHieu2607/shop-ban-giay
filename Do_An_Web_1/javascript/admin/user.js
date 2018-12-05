@@ -20,3 +20,7 @@ app.controller('listUserData', function($scope) {
 			]
    $scope.data=daTa;
 });
+function xoaSanPham()
+{
+	alert("Xóa thành công");
+}
